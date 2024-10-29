@@ -1,0 +1,563 @@
+:root {
+  --primary: #b4cff8;
+  --bg: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  /* scroll-behavior: smooth;  */
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 5000px; */
+}
+
+img {
+  max-width: 100%; /* Membatasi gambar agar tidak lebih lebar dari kontainer */
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* Hero Section */
+.hero h4 {
+  position: relative;
+  font-size: 2rem;
+  top: 14rem;
+  left: 38rem;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 4rem;
+  top: 14rem;
+  left: 38rem;
+}
+
+.hero .nama h1 {
+  position: relative;
+  left: -100rem;
+}
+
+.hero .nama1 h1 {
+  position: relative;
+  left: -100rem;
+}
+
+.hero .nama2 h1 {
+  position: relative;
+  left: -100rem;
+}
+
+.hero .nama3 h1 {
+  position: relative;
+  left: -100rem;
+}
+
+.hero .nama4 h1 {
+  position: relative;
+  left: -100rem;
+}
+
+.hero .nama5 h1 {
+  position: relative;
+  left: -100rem;
+}
+
+.hero h1 span,
+.about h1 span,
+.logo h2 span {
+  color: #b4cff8;
+}
+
+.hero p {
+  position: relative;
+  font-size: 1rem;
+  top: -13rem;
+  left: 38rem;
+}
+
+.hero button {
+  position: relative;
+  top: -37rem;
+  left: 38rem;
+  width: 100px; /* Ubah sesuai ukuran yang diinginkan */
+  height: 40px; /* Ubah sesuai ukuran yang diinginkan */
+  padding: 10px; /* Padding tambahan */
+  font-size: 16px; /* Ukuran font */
+  background-color: #007bff; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.hero img {
+  position: relative;
+  width: 250px;
+  top: -28rem;
+  left: 10rem;
+}
+
+/* about */
+.about p {
+  position: relative;
+  top: 16rem;
+  left: 33rem;
+}
+
+.about h1 {
+  position: relative;
+  top: 14rem;
+  left: 38rem;
+}
+
+.about {
+  position: relative;
+  top: -30rem;
+}
+
+.about img {
+  position: relative;
+  width: 250px;
+  top: 8rem;
+  left: 10rem;
+}
+
+.about h1 {
+  position: relative;
+  top: 15rem;
+}
+
+.about p {
+  position: relative;
+  top: 17rem;
+}
+
+/* project */
+.projek {
+  position: relative;
+  max-height: 120px;
+  display: flex;
+  top: -15rem;
+}
+
+.projek .item {
+  position: relative;
+  top: 18rem;
+  text-align: center;
+}
+
+.logo h2 {
+  position: relative;
+  top: -6rem;
+  left: 35rem;
+}
+
+.projek .item h2 {
+  position: relative;
+  top: -1rem;
+  left: 1rem;
+}
+
+.projek .item img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.projek .item button {
+  width: 100px; /* Ubah sesuai ukuran yang diinginkan */
+  height: 40px; /* Ubah sesuai ukuran yang diinginkan */
+  padding: 10px; /* Padding tambahan */
+  font-size: 16px; /* Ukuran font */
+  background-color: #007bff; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.container {
+  position: relative;
+  top: 45rem;
+  left: 20rem;
+  height: 450px;
+  max-width: 600px;
+  margin: auto;
+  background: var(--bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  position: relative;
+  top: -15rem;
+  text-align: center;
+  color: #fff;
+}
+
+.container form {
+  position: relative;
+  top: -13rem;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #fff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.map {
+  position: relative;
+  top: 5rem;
+  left: 8rem;
+  height: 400px;
+  width: 500px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px var(--primary);
+}
+
+.contact {
+  position: relative;
+  top: 23rem;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 20rem;
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.6rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit p span {
+  color: var(--bg);
+}
+
+footer .credit p {
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav a {
+    margin: 0.5rem 0;
+  }
+
+  .projek {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    flex: 1 1 calc(50% - 2rem);
+    margin: 1rem;
+  }
+
+  .hero img {
+    position: relative;
+    top: -35rem;
+    left: -10rem;
+    width: 200px;
+  }
+
+  .hero h4 {
+    position: relative;
+    font-size: 3.5rem;
+    top: 10rem;
+    left: 2rem;
+  }
+
+  .hero h1 {
+    position: relative;
+    font-size: 5rem;
+    top: 10rem;
+    left: 2rem;
+  }
+
+  .hero p {
+    position: relative;
+    font-size: 2rem;
+    top: 15rem;
+    left: 3rem;
+  }
+
+  .hero button {
+    position: relative;
+    top: -27rem;
+    left: 30rem;
+    width: 100px; /* Ubah sesuai ukuran yang diinginkan */
+    height: 40px; /* Ubah sesuai ukuran yang diinginkan */
+    padding: 10px; /* Padding tambahan */
+    font-size: 16px; /* Ukuran font */
+    background-color: #007bff; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Membuat sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+  }
+
+  .hero .nama h1 {
+    position: relative;
+    left: 30rem;
+  }
+  
+  .hero .nama1 h1 {
+    position: relative;
+    left: 31rem;
+  }
+  
+  .hero .nama2 h1 {
+    position: relative;
+    left: 30rem;
+  }
+  
+  .hero .nama3 h1 {
+    position: relative;
+    left: 30rem;
+  }
+  
+  .hero .nama4 h1 {
+    position: relative;
+    left: 31rem;
+  }
+  
+  .hero .nama5 h1 {
+    position: relative;
+    left: 30rem;
+  }
+
+  .about {
+    position: relative;
+    top: -15rem;
+  }
+
+  .about img {
+    position: relative;
+    width: 300px;
+    left: 7rem;
+    top: 10rem;
+  }
+
+  .about h1 {
+    position: relative;
+    left: 13rem;
+    top: 10rem;
+    font-size: 3rem;
+  }
+
+  .about p {
+    position: relative;
+    font-size: 1.8rem;
+    left: 2rem;
+    top: 63rem;
+  }
+
+  .projek {
+    position: relative;
+    top: 7rem;
+  }
+
+  .logo h2 {
+    position: relative;
+    top: 20rem;
+    left: 15rem;
+  }
+
+  .logo .item {
+    position: relative;
+    top: 18rem;
+  }
+
+  .container {
+    position: relative;
+    top: 150rem;
+    left: 0.3rem;
+    height: 450px;
+  }
+
+  .container form {
+    position: relative;
+    top: -4rem;
+    margin-bottom: 10px;
+  }
+
+  .container h2 {
+    position: relative;
+    top: -4.5rem;
+  }
+
+  label {
+    display: block;
+    margin: -10px 0 5px;
+    color: #fff;
+  }
+
+  .map {
+    position: relative;
+    top: 110rem;
+    left: 2.7rem;
+    height: 110px;
+  }
+
+  .contact {
+    position: relative;
+    top: 130rem;
+  }
+
+  footer {
+    position: relative;
+    top: 140rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    flex: 1 1 100%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
